@@ -58,21 +58,55 @@
 }
 
 /*  ───────── OVERRIDES ────────────────────────────────────────────────────  */
+body {
+    background-color: var(--bg-0) !important;
+    background-image: none !important;
+    position: relative !important;
+    min-height: 100dvh !important;
+    padding-bottom: 40px !important;
+}
+a {
+    color: var(--text-2);
+    text-decoration: none;
+    transition: color .25s ease, opacity .2s ease;
+}
+a:hover {
+    color: var(--text-0);
+    opacity: 1;
+}
+div.mt-2 > .font-size-message {
+    display: none !important
+}
 
 .lumi-main-grid {
     display: grid;
 }
+div.ant-row.css-f6nzt4 {
+    display: none !important;
+}
 
 /*  ───────── BUTTONS ──────────────────────────────────────────────────────  */
-button.ant-btn:not(:has(.anticon-question-circle)):not(:has(.anticon-star)) {
-    background: var(--lumi-surface) !important; border: 1px solid var(--lumi-glass-border) !important;
-    border-radius: var(--lumi-radius-sm) !important; color: var(--lumi-text) !important;
-    font-family: var(--lumi-font-body) !important; font-weight: 500 !important;
-    text-transform: none !important; letter-spacing: 0.01em !important;
-    position: relative !important; clip-path: none !important; transition: var(--lumi-btn-transition) !important
+div.mt-4:has(svg.lucide-messages-square) > .flex {
+
 }
-button.ant-btn:not(:has(.anticon-question-circle)):not(:has(.anticon-star))::before { display: none !important }
-button.ant-btn:not(:has(.anticon-question-circle)):not(:has(.anticon-star)):hover {
-    color: #fff !important; background: var(--lumi-surface-hover) !important; border-color: var(--lumi-orange) !important
+div.mt-4:has(svg.lucide-messages-square) > .flex > button.ant-btn:first-child {
+
 }
-button.ant-btn:not(:has(.anticon-question-circle)):not(:has(.anticon-star)):hover::before { display: none !important }
+div.mt-4:has(svg.lucide-messages-square) > .flex > button.ant-btn:first-child:hover {
+
+}
+div.mt-4:has(svg.lucide-messages-square) > .flex > button.ant-btn:first-child::before {
+
+}
+div.mt-4:has(svg.lucide-messages-square) > .flex > button.ant-btn:last-child {
+
+}
+div.mt-4:has(svg.lucide-messages-square) > .flex > button.ant-btn:last-child:hover {
+
+}
+div.mt-4:has(svg.lucide-messages-square) > .flex > button.ant-btn:last-child::before {
+
+}
+div.mt-4:has(svg.lucide-messages-square) > .flex > button.ant-btn svg {
+
+}
