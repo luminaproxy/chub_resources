@@ -186,12 +186,6 @@ div.mt-4:has(svg.lucide-messages-square) > .flex > button.ant-btn svg {
     position: relative;
     z-index: 2;
 }
-.lumi-header {
-    display: none !important;
-}
-.lumi-header-img {
-    display: none !important;
-}
 
 /*  ───────── CUSTOM DESKTOP STYLING ───────────────────────────────────────  */
 @media (min-width:992px) {
@@ -244,6 +238,51 @@ div.mt-4:has(svg.lucide-messages-square) > .flex > button.ant-btn svg {
         line-height: 1 !important;
         padding-bottom: 6px !important;
         animation: none !important;
+    }
+    .ant-row.ant-row-center > .ant-col-lg-6:first-child > * {
+        position: relative !important;
+        z-index: 1 !important;
+    }
+    .ant-row.ant-row-center > .ant-col-lg-6:first-child > div:not(.mt-4) {
+        display: none !important;
+    }
+    .ant-row.ant-row-center>.ant-col-lg-6:first-child>.mt-4:has(svg.lucide-messages-square) {
+        grid-column: 1 !important;
+        grid-row: 3 !important;
+        margin: 0 !important;
+        margin-bottom: -80px !important;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        gap: 8px !important;
+        background: transparent !important;
+        padding-top: 12px !important;
+    }
+    .ant-row.ant-row-center > .ant-col-lg-6:first-child > .mt-4:has(svg.lucide-messages-square) > * {
+        margin: 0 !important;
+    }
+    .ant-row.ant-row-center > .ant-col-lg-6:first-child > .mt-4:has(svg.lucide-messages-square) > button {
+        width: auto !important;
+        min-width: 0 !important;
+    }
+    .ant-row.ant-row-center > .ant-col-lg-6:first-child > .mt-4:has(svg.lucide-messages-square) > .flex {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .ant-row.ant-row-center > .ant-col-lg-6:first-child > .mt-4:has(.anticon-star) {
+        display: none !important;
+    }
+    .ant-row.ant-row-center > .ant-col-lg-18 {
+        flex: 0 0 100% !important; 
+        max-width: 100% !important;
+        margin-top: 0 !important; 
+        padding-left: 0 !important; 
+        padding-right: 0 !important;
+    }
+    .ant-row.ant-row-center > .ant-col-lg-18 > .ant-row {
+        padding-top: 0 !important;
+        margin-top: 0 !important;
     }
 }
 
