@@ -188,7 +188,7 @@ div.mt-4:has(svg.lucide-messages-square) > .flex > button.ant-btn svg {
 }
 
 /*  ───────── CUSTOM DESKTOP STYLING ───────────────────────────────────────  */
-/*
+
 @media (min-width:992px) {
     .ant-row.ant-row-center > .ant-col-lg-6:first-child {
         flex: 0 0 100% !important;
@@ -212,6 +212,7 @@ div.mt-4:has(svg.lucide-messages-square) > .flex > button.ant-btn svg {
         border-width: 2px !important;
         border-color: var(--border);
     }
+    /*
     .ant-row.ant-row-center > .ant-col-lg-6:first-child::before {
         content: '' !important;
         position: absolute !important;
@@ -285,5 +286,6 @@ div.mt-4:has(svg.lucide-messages-square) > .flex > button.ant-btn svg {
         padding-top: 0 !important;
         margin-top: 0 !important;
     }
+    */
 }
-*/
+
