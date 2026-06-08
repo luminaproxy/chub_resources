@@ -285,14 +285,3 @@ div.mt-4:has(svg.lucide-messages-square) > .flex > button.ant-btn svg {
         margin-top: 0 !important;
     }
 }
-
-
-
-
-
-.lumi-main-grid {
-    display: grid;
-}
-div.ant-row.css-f6nzt4 {
-    display: none !important;
-}
