@@ -55,6 +55,8 @@
     --lumi-font-body: 'Inter', sans-serif;
     --lumi-font-mono: 'IBM Plex Mono', monospace;
     --lumi-font-size: clamp(12px, 1.2vw, 14px);
+
+    --lumi-radius: 0px;
 }
 
 /*  ───────── OVERRIDES ────────────────────────────────────────────────────  */
@@ -77,7 +79,28 @@ a:hover {
 div.mt-2 > .font-size-message {
     display: none !important
 }
+.ant-layout-header,
+.ant-menu-overflow-item.ant-menu-item.ant-menu-item-only-child.no-padding.ml-0.pl-0.mr-2,
+.ant-menu-overflow.ant-menu.ant-menu-root.ant-menu-horizontal.ant-menu-dark {
+    background-color: rgba(0, 0, 0, 0) !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.ant-menu-horizontal {
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+.ant-menu.ant-menu-root.ant-menu-vertical,
+.ant-menu-vertical,
+.ant-layout-sider,
+.ant-layout-sider-dark,
+aside.ant-layout-sider {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+}
 
+/* dawdd */
 .lumi-main-grid {
     display: grid;
 }
@@ -86,6 +109,7 @@ div.ant-row.css-f6nzt4 {
 }
 
 /*  ───────── BUTTONS ──────────────────────────────────────────────────────  */
+/*
 div.mt-4:has(svg.lucide-messages-square) > .flex {
 
 }
@@ -109,4 +133,23 @@ div.mt-4:has(svg.lucide-messages-square) > .flex > button.ant-btn:last-child::be
 }
 div.mt-4:has(svg.lucide-messages-square) > .flex > button.ant-btn svg {
 
+}
+*/
+
+/*  ───────── COLLAPSIBLES ─────────────────────────────────────────────────  */
+.ant-collapse {
+    border: none !important;
+    background: transparent !important;
+    border-radius: var(--lumi-radius) !important;
+    overflow: hidden !important;
+    margin-top: 12px !important;
+    max-width: 100% !important;
+}
+.ant-collapse > .ant-collapse-item {
+    border: none !important;
+    border-bottom: 1px solid var(--border) !important;
+    border-radius: 0 !important;
+    background: var(--surface-1) !important;
+    overflow: hidden !important;
+    max-width: 100% !important;
 }
